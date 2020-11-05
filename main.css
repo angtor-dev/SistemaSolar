@@ -1,0 +1,167 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	background-color: #0b000b;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container div {
+	position: fixed;
+	border-radius: 50%;
+}
+
+.orbita {
+	background-color: transparent;
+	border: 1px solid #fff;
+	display: flex;
+	justify-content: center;
+	animation: infinite normal rotar;
+	animation-timing-function: linear;
+}
+
+.orbita div {
+	transform: translateY(-50%);
+	z-index: 1;
+}
+
+.orbita.uno {
+	width: 200px;
+	height: 200px;
+	filter: opacity(1);
+	animation-duration: 2.41s;
+}
+
+.orbita.dos {
+	width: 300px;
+	height: 300px;
+	filter: opacity(.9);
+	animation-duration: 6.16s;
+}
+
+.orbita.tres {
+	width: 400px;
+	height: 400px;
+	filter: opacity(.8);
+	animation-duration: 10s;
+}
+
+.orbita.cuatro {
+	width: 500px;
+	height: 500px;
+	filter: opacity(.7);
+	animation-duration: 18.82s;
+}
+
+.orbita.cinco {
+	width: 600px;
+	height: 600px;
+	filter: opacity(.6);
+	animation-duration: 118.6s;
+}
+
+.orbita.seis {
+	width: 700px;
+	height: 700px;
+	filter: opacity(.5);
+	animation-duration: 294.6s;
+}
+
+.orbita.siete {
+	width: 800px;
+	height: 800px;
+	filter: opacity(.4);
+	animation-duration: 840.1s;
+}
+
+.orbita.ocho {
+	width: 900px;
+	height: 900px;
+	filter: opacity(.3);
+	animation-duration: 1648.16s;
+}
+
+.orbita.nueve {
+	width: 1000px;
+	height: 1000px;
+	filter: opacity(.2);
+	animation-duration: 2477.01s;
+}
+
+.sun {
+	width: 110px;
+	height: 110px;
+	background-color: #FFBB00;
+	box-shadow: 0px 0px 20px 0px rgba(255,204,0,.75);
+}
+
+.mercurio {
+	width: 9px;
+	height: 9px;
+	background-color: #AA7733;
+}
+
+.venus {
+	width: 11px;
+	height: 11px;
+	background-color: #DD8833;
+}
+
+.tierra {
+	width: 14px;
+	height: 14px;
+	background-color: #2299DD;
+}
+
+.marte {
+	width: 10px;
+	height: 10px;
+	background-color: #DD5533;
+}
+
+.jupiter {
+	width: 50px;
+	height: 50px;
+	background-color: #DD7700;
+}
+
+.saturno {
+	width: 45px;
+	height: 45px;
+	background-color: #FFDD44;
+}
+
+.urano {
+	width: 30px;
+	height: 30px;
+	background-color: #33DD88;
+}
+
+.neptuno {
+	width: 25px;
+	height: 25px;
+	background-color: #2266FF;
+}
+
+.pluton {
+	width: 5px;
+	height: 5px;
+	background-color: #DDDDEE;
+}
+
+@keyframes rotar {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(359deg);
+	}
+}
